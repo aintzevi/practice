@@ -8,7 +8,7 @@ stages:
 build:
   stage: build
   script: /usr/lib/jvm/jdk-13.0.1/bin/javac HelloWorld.java
-  artifacts
+  artifacts:
     paths: 
       - HelloWorld.*
 
