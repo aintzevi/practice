@@ -3,7 +3,6 @@ image: java:latest
 stages:
   - build
   - execute
-  - test
   
 build:
   stage: build
@@ -16,7 +15,3 @@ execute:
   stage: execute
   script: /usr/lib/jvm/jdk-13.0.1/bin/java HelloWorld
   
-unit tests:
-  stage: test
-  script:
-
