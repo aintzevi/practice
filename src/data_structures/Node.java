@@ -6,12 +6,13 @@ public class Node {
     private int value;
 
     // Default constructor
-    public Node() {
-
+    Node() {
     }
 
     public Node(int value) {
         this.value = value;
+        this.previous = null;
+        this.next = null;
     }
 
     public Node(Node next, Node previous, int value) {

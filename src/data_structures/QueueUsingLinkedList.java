@@ -5,7 +5,7 @@ public class QueueUsingLinkedList {
     private Node rear;
     private int size;
 
-    public QueueUsingLinkedList() {
+    QueueUsingLinkedList() {
         front = rear = null;
         size = 0;
     }
@@ -15,11 +15,15 @@ public class QueueUsingLinkedList {
     }
 
     public void add (Node newNode) {
-
+        rear.setNext(newNode);
+        newNode = rear;
     }
 
-    public Node delete () {
-        return null;
+    public Node remove () {
+        Node currentFront = front;
+        front = front.getNext();
+        front.setPrevious(null);
+        return currentFront;
     }
 
     public Node peek() {
@@ -27,6 +31,11 @@ public class QueueUsingLinkedList {
     }
 
     public void printAll() {
+        Node current = front;
 
+        while (current.getNext() != null) {
+            System.out.println(current.getValue());
+            current = current.getNext();
+        }
     }
 }

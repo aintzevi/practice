@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6588bad-8595-4a69-bdf7-ceca5bf7f288" name="Default Changelist" comment="" />
+    <list default="true" id="e6588bad-8595-4a69-bdf7-ceca5bf7f288" name="Default Changelist" comment="Add some Node and Queue method implementations">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_structures/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/practice/sorting_algos/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice/sorting_algos/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/practice/sorting_algos/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice/sorting_algos/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_structures/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_structures/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_structures/QueueUsingLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_structures/QueueUsingLinkedList.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +23,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SZv4nmJUXp1zGvp7ttmbS89Hex" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.FizzBuzz">
     <configuration name="BasicArrayOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="array_basics.BasicArrayOperations" />
       <module name="practice" />
@@ -69,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Difference21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week1.Difference21" />
+    <configuration name="FizzBuzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week1.FizzBuzz" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
@@ -110,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FizzBuzz" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.BasicArrayOperations" />
-        <item itemvalue="Application.Difference21" />
       </list>
     </recent_temporary>
   </component>
@@ -140,12 +154,64 @@
       <workItem from="1572848297240" duration="599000" />
       <workItem from="1572869236506" duration="7138000" />
       <workItem from="1573078795965" duration="3610000" />
-      <workItem from="1573161603961" duration="245000" />
+      <workItem from="1573161603961" duration="3216000" />
+      <workItem from="1573204211709" duration="358000" />
+      <workItem from="1573302310012" duration="22904000" />
     </task>
+    <task id="LOCAL-00001" summary="Change bubble sort to stop when there are no swaps left">
+      <created>1573318205758</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573318205758</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Node class">
+      <created>1573341269618</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573341269618</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add skeleton classes for two queue implementations">
+      <created>1573341349235</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573341349235</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Basic FizzBuzz implementation">
+      <created>1573387377371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573387377371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change bubble sort to stop when there are no swaps left" />
+    <MESSAGE value="Add Node class" />
+    <MESSAGE value="Add skeleton classes for two queue implementations" />
+    <MESSAGE value="Basic FizzBuzz implementation" />
+    <MESSAGE value="Add some Node and Queue method implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add some Node and Queue method implementations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
