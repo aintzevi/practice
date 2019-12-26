@@ -1,6 +1,6 @@
 package data_structures;
 
-public class Main {
+public class ListQueueMain {
     public static void main(String[] args) {
         QueueUsingLinkedList queue = new QueueUsingLinkedList();
 
