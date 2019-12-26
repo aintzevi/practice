@@ -46,7 +46,14 @@ public class QueueUsingLinkedList {
     public Node remove() {
         Node currentFront = front;
         front = front.getNext();
-        front.setPrevious(null);
+        if (front == null) {
+            rear = null;
+            isEmpty = true;
+        }
+        else {
+            front.setPrevious(null);
+        }
+
         return currentFront;
     }
 
