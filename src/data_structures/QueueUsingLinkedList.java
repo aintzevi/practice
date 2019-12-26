@@ -3,35 +3,44 @@ package data_structures;
 public class QueueUsingLinkedList {
     private Node front;
     private Node rear;
-    private static int size;
-
-    static int getSize() {
-        return size;
-    }
+    private int size;
+    private boolean isEmpty;
 
     QueueUsingLinkedList() {
         front = rear = null;
         size = 0;
+        isEmpty = true;
     }
 
-    boolean isEmpty() {
-        return front == null && rear == null;
+    public int getSize() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return isEmpty;
     }
 
     void add(Node newNode) {
 
-        if (isEmpty())
+        if (isEmpty) {
             front = rear = newNode;
-        else if (front == rear) {
+            newNode.setPrevious(null);
+            newNode.setNext(null);
+        }
+
+        else if (size == 1) {
             rear = newNode;
-            front.setNext(rear);
-            rear.setPrevious(front);
+            front.setNext(newNode);
+            newNode.setPrevious(front);
+            newNode.setNext(null);
         } else {
-            Node temp = rear;
+            rear.setNext(newNode);
+            newNode.setPrevious(rear);
             rear = newNode;
-            rear.setPrevious(temp);
+            rear.setPrevious(null);
         }
         size++;
+        isEmpty = false;
     }
 
     public Node remove() {
@@ -48,9 +57,10 @@ public class QueueUsingLinkedList {
     void printAll() {
         Node current = front;
 
-        while (current.getNext() != rear) {
+        while (current != null) {
             System.out.println(current.getValue());
             current = current.getNext();
         }
+        System.out.println("---------");
     }
 }
