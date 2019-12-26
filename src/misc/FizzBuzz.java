@@ -1,4 +1,4 @@
-package week1;
+package misc;
 
 public class FizzBuzz {
     public static void main(String[] args) {
