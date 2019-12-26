@@ -55,7 +55,19 @@ public class QueueUsingArray {
             rearIndex++;
         }
         else {
-            //TODO check if full => print message or if needs to shift (frontIndex > 0)
+            if(frontIndex > 0) {
+                // shift values backward and update front and rear index
+                int numberOfElements = rearIndex - frontIndex + 1;
+                for (int i = 0 ; i < numberOfElements ; i++) {
+                    queue[i] = queue[frontIndex + i];
+                }
+                frontIndex = 0;
+                rearIndex = numberOfElements;
+            }
+            else {
+                System.out.println("No space left for new values!");
+                // TODO: Update so that the array gets "bigger"
+            }
         }
     }
 
@@ -63,8 +75,6 @@ public class QueueUsingArray {
         int currentFront = queue[frontIndex];
         if(frontIndex < size - 1)
             frontIndex++;
-//        else
-//            // TODO Move items on else or print message
 
         return currentFront;
     }
