@@ -4,12 +4,15 @@ public class ArrayQueueMain {
     public static void main(String[] args) {
         QueueUsingArray queueUsingArray = new QueueUsingArray(20);
 
-        for (int i = 1 ; i <= queueUsingArray.getSize(); i++) {
+        for (int i = 1 ; i < 5; i++) {
             queueUsingArray.add(i);
         }
 
         queueUsingArray.printElements();
-/*        System.out.println(queueUsingArray.getFrontIndex());
-        System.out.println(queueUsingArray.getRearIndex());*/
+
+        for (int i = 1 ; i <= 5; i++) {
+            queueUsingArray.remove();
+            queueUsingArray.printElements();
+        }
     }
 }
